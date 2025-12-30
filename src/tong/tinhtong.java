@@ -1,11 +1,12 @@
+package tong;
+
 import java.io.*;
-import java.util.Scanner;
-import java.util.*;
+
 public class tinhtong {
-    public static void main(String[] args) {
+    public void readFileText(String nhap) {
 
         try {
-            File file = new File("numbers.txt");
+            File file = new File(nhap);
             if (!file.exists()) {
                 throw new FileNotFoundException();
             }
